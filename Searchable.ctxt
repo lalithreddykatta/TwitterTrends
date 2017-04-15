@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=value
+comment0.target=java.util.Collection\ search(java.lang.Object)
+comment0.text=\r\n\r\n\ Searches\ an\ underlying\ inventory\ of\ items\ consisting\ of\ type\ E\r\n\r\n\ @param\ value\ A\ searchable\ value\ of\ type\ V\r\n\r\n\ @return\ A\ Collection\ of\ items\ of\ type\ E.\r\n\r\n
+numComments=1

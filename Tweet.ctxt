@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=s\ pop
+comment0.target=Tweet(twitter4j.Status,\ java.lang.Boolean)
+numComments=1
