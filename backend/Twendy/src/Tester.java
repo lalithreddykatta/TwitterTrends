@@ -10,9 +10,10 @@ import java.io.File;
 public class Tester {
     public static void main(String[] args){
         try {
+            String searchTerm = "Trump";
             TwitterCli.init();
             System.out.println("Initialized");
-            List<Tweet> tweet = TwitterCli.getTweetEfficiently("Trump");
+            List<Tweet> tweet = TwitterCli.getTweetEfficiently(searchTerm);
             System.out.println("Number of tweets: " + tweet.size());
             DataSorter sorter = new DataSorter(tweet);
 
@@ -22,8 +23,8 @@ public class Tester {
 
 
 
-
-
+            JSONObject mainJSONObject = new JSONObject();
+            JSONArray mainJSONArray = new JSONArray();
 
             for (int i = 0; i < tweets.size(); i++){
                 //out.println((i + 1) + " " + tweets.get(i).size() + " 0.005");
@@ -41,11 +42,13 @@ public class Tester {
                 }
                 obj.put("tweets", arrayJson);
                 obj.put("emotionalrating", "2");
-                out.println(obj.toString());
+                mainJSONArray.put(obj);
+                //out.println(obj.toString());
             }
+            mainJSONObject.put(searchTerm, mainJSONArray);
             //out.close();
             //System.out.print(obj.toString());
-            //out.print(obj.toString());
+            out.print(mainJSONObject.toString());
             //out.print("Test");
             out.close();
         } catch (Exception e){
