@@ -18,7 +18,7 @@ public class TwitterCli {
 
     //static OAuth1 login = new OAuth1(consumerKey,consumerSecret,accessToken,accessTokenSecret);
     static ConfigurationBuilder cb = new ConfigurationBuilder();
-    static private int numTweets = 2000;
+    static private int numTweets = 50;
     static TwitterFactory tf;
     static Twitter twitter;
     static Query nxt = new Query();
@@ -27,10 +27,6 @@ public class TwitterCli {
         cb.setDebugEnabled(true).setOAuthConsumerKey(consumerKey).setOAuthConsumerSecret(consumerSecret).setOAuthAccessToken(accessToken).setOAuthAccessTokenSecret(accessTokenSecret);
         tf = new TwitterFactory(cb.build());
         twitter = tf.getInstance();
-    }
-
-    public static List testGetTweets(String search) throws Exception{
-
     }
 
     public static List getTweets(String search) throws Exception {

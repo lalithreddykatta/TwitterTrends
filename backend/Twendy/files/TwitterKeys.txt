@@ -14,7 +14,7 @@ Lalith
     	1489329019-zEesacq1spp8uaSWWqmPwix6zA72IRWB5NhS9oD
     	lbI23qG8E3F0TVWKuhTZB3RN4AFcslTEF9UhlRsRADto4"
 ChaIndiot Nishan
-	LqFDdgq7SurJdoQeAtBiDmC8p
-        GDdnMzYJyLddVFgdeXET9I0sHzQFYMGgozIrcTiJzDcTSflogo
-        729714377562030082-FtbarB7pQ6BbMK8589vPpoiVgFBMV0i
-        o1GgPnihASydGh7jgMQEFncw7DQp0hGfHC9BcvpXL4A0a
+    static public String consumerKey = "LqFDdgq7SurJdoQeAtBiDmC8p";
+    static public String consumerSecret = "GDdnMzYJyLddVFgdeXET9I0sHzQFYMGgozIrcTiJzDcTSflogo";
+    static public String accessToken = "729714377562030082-FtbarB7pQ6BbMK8589vPpoiVgFBMV0i";
+    static public String accessTokenSecret = "o1GgPnihASydGh7jgMQEFncw7DQp0hGfHC9BcvpXL4A0a";
