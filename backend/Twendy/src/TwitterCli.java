@@ -61,6 +61,7 @@ public class TwitterCli {
     public static List getTweetEfficiently(String search) throws Exception {
         List<Tweet> tweets = new LinkedList<>();
         Query srch = new Query(search);
+        srch.setLang("en");
         tweets.addAll(getPopular(srch));
         while (tweets.size() < numTweets && nxt != null) {
             tweets.addAll(getPopular(nxt));
