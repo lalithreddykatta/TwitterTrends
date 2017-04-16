@@ -41,14 +41,18 @@ public class Tester {
                     arrayJson.put(Long.toString(tweets.get(i).get(j).getStatus().getId()));
                 }
                 obj.put("tweets", arrayJson);
-                obj.put("emotionalrating", "2");
+                obj.put("emotionalrating", 2);
                 mainJSONArray.put(obj);
                 //out.println(obj.toString());
             }
             mainJSONObject.put(searchTerm, mainJSONArray);
             //out.close();
             //System.out.print(obj.toString());
-            out.print(mainJSONObject.toString());
+
+
+            //out.print(mainJSONObject.toString());
+            out.print(mainJSONArray.toString());
+
             //out.print("Test");
             out.close();
         } catch (Exception e){
