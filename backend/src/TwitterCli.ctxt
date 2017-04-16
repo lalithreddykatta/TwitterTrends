@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ init()
+comment1.params=search
+comment1.target=java.util.List\ getTweets(java.lang.String)
+comment2.params=search
+comment2.target=java.util.List\ getTweetEfficiently(java.lang.String)
+comment3.params=srch
+comment3.target=java.util.List\ getPopular(twitter4j.Query)
+comment4.params=srch
+comment4.target=java.util.List\ getRecent(twitter4j.Query)
+comment5.params=search
+comment5.target=java.util.List\ getLive(java.lang.String)
+numComments=6

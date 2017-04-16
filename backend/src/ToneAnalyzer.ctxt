@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=versionDate
+comment0.target=ToneAnalyzer(java.lang.String)
+comment0.text=\r\n\ Instantiates\ a\ new\ tone\ analyzer.\r\n\r\n\ @param\ versionDate\ The\ version\ date\ (yyyy-MM-dd)\ of\ the\ REST\ API\ to\ use.\ Specifying\ this\ value\ will\ keep\ your\ API\r\n\ \ \ \ \ \ \ \ calls\ from\ failing\ when\ the\ service\ introduces\ breaking\ changes.\r\n
+comment1.params=versionDate\ username\ password
+comment1.target=ToneAnalyzer(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Instantiates\ a\ new\ tone\ analyzer\ with\ username\ and\ password.\r\n\r\n\ @param\ versionDate\ The\ version\ date\ (yyyy-MM-dd)\ of\ the\ REST\ API\ to\ use.\ Specifying\ this\ value\ will\ keep\ your\ API\r\n\ \ \ \ \ \ \ \ calls\ from\ failing\ when\ the\ service\ introduces\ breaking\ changes.\r\n\ @param\ username\ the\ username\r\n\ @param\ password\ the\ password\r\n
+comment2.params=text\ options
+comment2.target=com.ibm.watson.developer_cloud.http.ServiceCall\ getTone(java.lang.String,\ com.ibm.watson.developer_cloud.tone_analyzer.v3.model.ToneOptions)
+comment2.text=\r\n\ Analyzes\ the\ "tone"\ of\ a\ piece\ of\ text.\ The\ message\ is\ analyzed\ from\ several\ tones\ (social\ tone,\ emotional\ tone,\r\n\ writing\ tone),\ and\ for\ each\ of\ them\ various\ traits\ are\ derived\ (such\ as\ conscientiousness,\ agreeableness,\r\n\ openness).\r\n\r\n\ @param\ text\ The\ text\ to\ analyze\r\n\ @param\ options\ The\ {@link\ ToneOptions}\ options\r\n\ @return\ the\ {@link\ ToneAnalysis}\ with\ the\ response\r\n
+numComments=3

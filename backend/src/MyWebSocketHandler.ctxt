@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=statusCode\ reason
+comment0.target=void\ onClose(int,\ java.lang.String)
+comment1.params=t
+comment1.target=void\ onError(java.lang.Throwable)
+comment2.params=session
+comment2.target=void\ onConnect(org.eclipse.jetty.websocket.api.Session)
+comment3.params=message
+comment3.target=void\ onMessage(java.lang.String)
+numComments=4

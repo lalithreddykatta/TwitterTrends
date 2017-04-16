@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=AutocompleteJComboBox(Searchable)
+comment0.text=\r\n\ Constructs\ a\ new\ object\ based\ upon\ the\ parameter\ searchable\r\n\ @param\ s\r\n
+comment1.params=arg0
+comment1.target=void\ changedUpdate(javax.swing.event.DocumentEvent)
+comment2.params=arg0
+comment2.target=void\ insertUpdate(javax.swing.event.DocumentEvent)
+comment3.params=arg0
+comment3.target=void\ removeUpdate(javax.swing.event.DocumentEvent)
+comment4.params=
+comment4.target=void\ update()
+comment5.params=
+comment5.target=void\ run()
+comment6.params=arg0
+comment6.target=void\ focusGained(java.awt.event.FocusEvent)
+comment7.params=arg0
+comment7.target=void\ focusLost(java.awt.event.FocusEvent)
+numComments=8

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=s\ pop
+comment0.target=Tweet(twitter4j.Status,\ java.lang.Boolean)
+comment1.params=
+comment1.target=twitter4j.Status\ getStatus()
+comment2.params=
+comment2.target=int\ getHour()
+comment3.params=obj
+comment3.target=int\ compareTo(java.lang.Object)
+numComments=4

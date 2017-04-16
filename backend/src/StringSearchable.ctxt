@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=terms
+comment0.target=StringSearchable(java.util.List)
+comment0.text=\r\n\r\n\ Constructs\ a\ new\ object\ based\ upon\ the\ parameter\ terms.\ \r\n\r\n\ @param\ terms\ The\ inventory\ of\ terms\ to\ search.\r\n\r\n
+comment1.params=value
+comment1.target=java.util.Collection\ search(java.lang.String)
+numComments=2

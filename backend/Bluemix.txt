@@ -1,0 +1,5 @@
+{
+  "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+  "username": "eab5f7f9-1d61-4c82-9461-e7937b236c4d",
+  "password": "rClT0ABCpotl"
+}
