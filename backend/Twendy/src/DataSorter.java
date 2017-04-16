@@ -40,14 +40,9 @@ public class DataSorter {
         System.out.println("Number of Tweets during Print: " + size);
     }
 
-    public void print(){
+    public ArrayList<ArrayList<Tweet>> print(){
         amountOfTweets();
-        System.out.println("Outer Array: " + tweets.size());
-        for (int i = 0; i < tweets.size(); i++){
-            System.out.println("Inner Array " + (i + 1) + ": " + tweets.get(i).size());
-            for (int j = 0 ; j < tweets.get(i).size(); j++){
-                System.out.println(i + ": " + tweets.get(i).get(j).getStatus().getText());
-            }
-        }
+     return tweets;
     }
+
 }
