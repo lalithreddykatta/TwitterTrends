@@ -1,0 +1,20 @@
+Name
+	Consumer Key (API Key)	       
+	Consumer Secret (API Secret)	
+	Access Token	                
+	Access Token Secret
+Brandon 
+	KssIbOtOS88r7INibQ809TrJa
+	KPmUxALomKmI3yocyI6CPk46eXX9SplqrwCMRVv6s1k1NVMd9O
+	853406556905283584-kr4unFmPxjUp1eL6ZA3Q18dNJ8MoFed
+	hmDhwKkHz6qDeVHlB5UNbPEiICYE7Ln3yKPw6J3zILJXk
+Lalith
+	yuSQAz9haXiSSkBBrm5achcjb
+    	5HFyNvlitJpzHgMiVv1iHDbQhZpigPh2pa8VoSc0m5FxMWni1z
+    	1489329019-zEesacq1spp8uaSWWqmPwix6zA72IRWB5NhS9oD
+    	lbI23qG8E3F0TVWKuhTZB3RN4AFcslTEF9UhlRsRADto4"
+ChaIndiot Nishan
+    static public String consumerKey = "LqFDdgq7SurJdoQeAtBiDmC8p";
+    static public String consumerSecret = "GDdnMzYJyLddVFgdeXET9I0sHzQFYMGgozIrcTiJzDcTSflogo";
+    static public String accessToken = "729714377562030082-FtbarB7pQ6BbMK8589vPpoiVgFBMV0i";
+    static public String accessTokenSecret = "o1GgPnihASydGh7jgMQEFncw7DQp0hGfHC9BcvpXL4A0a";
