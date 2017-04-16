@@ -10,15 +10,15 @@ import java.util.*;
 import java.awt.event.*;
 
 public class TwitterCli {
-    static public String consumerKey = "LqFDdgq7SurJdoQeAtBiDmC8p";
-    static public String consumerSecret = "GDdnMzYJyLddVFgdeXET9I0sHzQFYMGgozIrcTiJzDcTSflogo";
-    static public String accessToken = "729714377562030082-FtbarB7pQ6BbMK8589vPpoiVgFBMV0i";
-    static public String accessTokenSecret = "o1GgPnihASydGh7jgMQEFncw7DQp0hGfHC9BcvpXL4A0a";
+    static public String consumerKey = "KssIbOtOS88r7INibQ809TrJa";
+    static public String consumerSecret = "KPmUxALomKmI3yocyI6CPk46eXX9SplqrwCMRVv6s1k1NVMd9O";
+    static public String accessToken = "853406556905283584-kr4unFmPxjUp1eL6ZA3Q18dNJ8MoFed";
+    static public String accessTokenSecret = "hmDhwKkHz6qDeVHlB5UNbPEiICYE7Ln3yKPw6J3zILJXk";
 
 
     //static OAuth1 login = new OAuth1(consumerKey,consumerSecret,accessToken,accessTokenSecret);
     static ConfigurationBuilder cb = new ConfigurationBuilder();
-    static private int numTweets = 10;
+    static private int numTweets = 2000;
     static TwitterFactory tf;
     static Twitter twitter;
     static Query nxt = new Query();
@@ -27,6 +27,10 @@ public class TwitterCli {
         cb.setDebugEnabled(true).setOAuthConsumerKey(consumerKey).setOAuthConsumerSecret(consumerSecret).setOAuthAccessToken(accessToken).setOAuthAccessTokenSecret(accessTokenSecret);
         tf = new TwitterFactory(cb.build());
         twitter = tf.getInstance();
+    }
+
+    public static List testGetTweets(String search) throws Exception{
+
     }
 
     public static List getTweets(String search) throws Exception {
@@ -51,9 +55,7 @@ public class TwitterCli {
         int i = 0;
         while ((i < 3) && (qr.hasNext())) {
             qr = twitter.search(srch);
-            tweets.addAll(getPopular(
-                    srch
-            ));
+            tweets.addAll(getPopular(srch));
             srch = twitter.search(srch).nextQuery();
             i++;
         }
@@ -63,11 +65,31 @@ public class TwitterCli {
     public static List getTweetEfficiently(String search) throws Exception {
         List<Tweet> tweets = new LinkedList<>();
         Query srch = new Query(search);
+        tweets.addAll(getPopular(srch));
+        while (tweets.size() < numTweets && nxt != null) {
+            tweets.addAll(getPopular(nxt));
+        }
         tweets.addAll(getRecent(srch));
         while (tweets.size() < numTweets && nxt != null) {
             tweets.addAll(getRecent(nxt));
         }
         return tweets;
+    }
+
+    public static List getPopular(Query srch) throws Exception {
+        srch.setResultType(Query.ResultType.popular);
+        boolean pop = true;
+        QueryResult qr = twitter.search(srch);
+        List twts = new ArrayList<>();
+        for (Status s : qr.getTweets()) {
+            twts.add(new Tweet(s, pop));
+        }
+        if (qr.hasNext()) {
+            nxt = qr.nextQuery();
+        } else {
+            nxt = null;
+        }
+        return twts;
     }
 
     public static List getRecent(Query srch) throws Exception {
@@ -82,17 +104,6 @@ public class TwitterCli {
             nxt = qr.nextQuery();
         } else {
             nxt = null;
-        }
-        return twts;
-    }
-
-    public static List getPopular(Query srch) throws Exception {
-        srch.setResultType(Query.ResultType.popular);
-        boolean pop = true;
-        QueryResult qr = twitter.search(srch);
-        List twts = new ArrayList<>();
-        for (Status s : qr.getTweets()) {
-            twts.add(new Tweet(s, pop));
         }
         return twts;
     }

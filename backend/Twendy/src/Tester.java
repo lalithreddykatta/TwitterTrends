@@ -9,13 +9,13 @@ public class Tester {
         try {
             TwitterCli.init();
             System.out.println("Initialized");
-            List<Tweet> tweet = TwitterCli.getTweets("United");
+            List<Tweet> tweet = TwitterCli.getTweetEfficiently("Rick and Morty");
             System.out.println("Number of tweets: " + tweet.size());
             DataSorter sorter = new DataSorter(tweet);
 
             ArrayList<ArrayList<Tweet>> tweets = sorter.print();
 
-            PrintWriter out = new PrintWriter(new FileWriter("files/Data1.txt", false));
+            PrintWriter out = new PrintWriter(new FileWriter("files/Data4.txt", false));
 
             for (int i = 0; i < tweets.size(); i++){
                 out.println((i + 1) + " " + tweets.get(i).size() + " 0.005");
